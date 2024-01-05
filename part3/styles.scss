@@ -1,0 +1,45 @@
+.pagination {
+  width: max-content;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  .active {
+    background-color: #a1e6e2;
+    color: #000;
+  }
+
+  a {
+    text-decoration-line: none;
+    color: #fff;
+    background-color: #20b2aa;
+    padding: 15px;
+  }
+
+  button {
+    border: none;
+    background-color: #20b2aa;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .pagination {
+    width: max-content;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .active {
+      display: inline-block;
+    }
+
+    a {
+      display: none;
+    }
+  }
+}

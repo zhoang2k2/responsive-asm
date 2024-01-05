@@ -1,0 +1,48 @@
+table {
+  thead {
+    &:nth-child(1),
+    &:nth-child(3) {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 786px) {
+  table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    thead {
+      tr {
+        display: flex;
+        flex-direction: column;
+
+        th {
+          text-align: left;
+        }
+      }
+
+      &:nth-child(1),
+      &:nth-child(3) {
+        display: table;
+      }
+
+      &:nth-child(1),
+      &:nth-child(5) {
+        background-color: #cccccc;
+      }
+    }
+
+    tbody {
+      tr {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &:nth-child(2),
+      &:nth-child(6) {
+        background-color: #cccccc;
+      }
+    }
+  }
+}
